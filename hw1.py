@@ -1,8 +1,8 @@
 def calculator():
     while True:
-        operation = input("연산 선택 (+ 또는 -): ")
+        operation = input("연산 선택 (+ 또는 - 또는 * 또는 /): ")
         if operation not in ['+', '-']:
-            print("error 잘못된 연산임. + 또는 -을 선택 요망.")
+            print("error 잘못된 연산임. +,-,*,/을 선택 요망.")
             continue
         try:
             num1 = int(input("첫 번째 숫자를 입력: "))
