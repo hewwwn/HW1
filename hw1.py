@@ -13,8 +13,17 @@ def calculator():
 
         if operation == '+':
             result = num1 + num2
-        else:
+        elif operation == '-':
             result = num1 - num2
+        elif operation == '*':
+            result = num1*num2
+        elif operation == '/':
+            if num2 != 0:
+                result = num1/num2
+            else:
+                print("error 0으로 나눌 수 없음.")
+                continue
+                                
 
         print(f"결과: {result}")
         cont = input("다시 계산하기 (y/n): ")
